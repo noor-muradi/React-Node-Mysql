@@ -43,13 +43,8 @@ services:
     environment:
       <<: *common-variables
       MYSQL_HOST_IP: mysql_db
-<<<<<<< HEAD
     ports:
       - 4001:3001	
-=======
-    ports: 
-      - 4001:3001
->>>>>>> 58de9a93c6e98beec5c51a7f3df533e48a01be84
 
   client:
     stdin_open: true
@@ -62,9 +57,4 @@ services:
       - /app/node_modules
       - ./client:/app
     ports:
-<<<<<<< HEAD
-      - 4000:3000	
-
-=======
-      - 4000:3000
->>>>>>> 58de9a93c6e98beec5c51a7f3df533e48a01be84
+     - 4000:3000	
